@@ -3,7 +3,7 @@ Summary:	Generate Python data structures and XML parser from Xschema
 Summary(pl.UTF-8):	-
 Name:		python-%{module}
 Version:	2.3b
-Release:	0.1
+Release:	0.2
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/g/generateDS/%{module}-%{version}.tar.gz
@@ -52,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README tutorial
 %attr(755,root,root) %{_bindir}/*
+%dir %{py_sitescriptdir}/lib%{module}
 %{py_sitescriptdir}/lib%{module}/*.py[co]
 %{py_sitescriptdir}/lib%{module}/gui
 %if "%{py_ver}" > "2.4"
