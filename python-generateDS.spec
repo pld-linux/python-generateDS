@@ -10,6 +10,7 @@ Source0:	http://pypi.python.org/packages/source/g/generateDS/%{module}-%{version
 # Source0-md5:	272e04c47abc8110fac7589917015bd0
 URL:		http://pypi.python.org/pypi/generateDS/
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
